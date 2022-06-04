@@ -1,30 +1,43 @@
-#include <stdlib.h>
-#include <time.h>
-#include <studio.h>
+#include <stdio.h>
+
+
+
 /**
  * main -entry point
- *
- * Description: character disply
- * Return: 0 means succes
+ * Return: 0
  */
+
 int main(void)
 {
 
-char al = 'a', e, q;
+char l_letter = 'a';
 
 
-e = 'e';
-q = 'q';
 
-while (al <= 'z')
+while (l_letter <= 'z')
+
 {
-if (al !=e && al !=q)
-putchar(al);
 
-++al;
+if (!(l_letter == 'e' || l_letter == 'q'))
+
+{
+
+putchar(l_letter);
 
 }
+
+
+
+l_letter++;
+
+}
+
+
+
 putchar('\n');
 
+
+
 return (0);
+
 }
