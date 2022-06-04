@@ -1,23 +1,30 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+#include <studio.h>
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
+ * main -entry point
+ *
+ * Description: character disply
+ * Return: 0 means succes
+ */
 int main(void)
 {
 
-char low, e, q;
+char al = 'a', e, q;
+
+
 e = 'e';
 q = 'q';
-for (low = 'a'; low <= 'z'; low++)
+
+while (al <= 'z')
 {
-if (low != e && low != q)
-putchar(low);
+if (al !=e && al !=q)
+putchar(al);
+
+++al;
+
 }
-putchar('\');
+putchar('\n');
+
 return (0);
 }
