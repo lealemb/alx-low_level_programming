@@ -24,7 +24,7 @@ for (num3 = num2 + 1; num3 <= 57; num3++)
 {
 putchar(num1);
 putchar(num2);
-putchar(num3);	
+putchar(num3);
 if (!(num1 == 55 && num2 == 56 && num3 == 57))
 {
 
