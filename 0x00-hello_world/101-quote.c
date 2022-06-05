@@ -2,14 +2,12 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main -start point                                                             * Description:no print 
- *
- * Return: return 1 means succes
+ * main - Prints string to standard error
+ * Return: 1
  */
-
 int main(void)
 {
-char str1[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";                                        
-write(2, str1, 59);                                                                                                           
+	
+write(2, "and that piece of art is useful - Dora Korpar, 2015-10-19\n", 58);
 return (1);
 }
