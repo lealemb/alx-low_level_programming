@@ -1,15 +1,13 @@
 #include <stdio.h>                                                                                                          
+#include <stdlib.h>                                        
+#include <time.h>
 
-#include <stdlib.h>                                                                                                         
-
-#include <time.h>                                                                                                           
-
-/**                                                                                                                         
- * main - entry point                                                                                                    
+/**                                                                                                        
+ * main - entry point
  *
- * Description                                                                                                              
- * Return: Always 0.                                                                                                        
- */ 
+ * Description                                                                                               
+ * Return: Always 0.
+ */
 int main(void)
 {
 
