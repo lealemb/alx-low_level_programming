@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main -Starting point
- * 
+ *
  * Description :Function prototype
  * Return: Always 0 (Success)
  */
