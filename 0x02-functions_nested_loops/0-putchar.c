@@ -1,23 +1,17 @@
-#include "main.h"
-
-/
- * main - entry block
- * @void: no argument
- * Return: 0
- /
- 
-int main(void)
-
+#include "main.h"                                                                                                           
+/**                                                                                                                         
+ * main -Starting point               
+ *                                             
+ * Description :Function prototype                       
+ * Return: Always 0 (Success)
+ */
+int main(void)                                                                                                                                   
+{                                                                                                                           char str[8] = "_putchar";  
+int i = 0;                                                                     
+while (i < 8)                                   
 {
-char lealem[] = "_putchar";
-
-int c;
- for (c = 0; c < 8; c++)
-
-{
-_putchar(haile[c]);
-
+_putchar(str[i]);
+++i;             	
 }
-_putchar('\n');
-return (0);
+_putchar('\n');                                                                                                             return (0);
 }
