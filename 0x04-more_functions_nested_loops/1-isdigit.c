@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _isdigit - A function that checks for a digit (0 through 9).
+ * _isdigit - check if paramter c represents an digit.
  * @c: int representing an ascil character 
- * Return: 1 if c is a digit or 0 otherwise
+ * Return: Return 1 if it is a digit otherwise return 0.
  */
 int _isdigit(int c)
 {
