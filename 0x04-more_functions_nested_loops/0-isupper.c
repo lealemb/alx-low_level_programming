@@ -1,19 +1,23 @@
-#include "main.h"
-/**
- * print_most_numbers - check the code for Holberton School students.
- * Return: Always 0.
- */
-void print_most_numbers(void)
-{
-char c = '0';
+#include "holberton.h"
 
-while (c <= '9')
+/**
+ * _isupper - A function that checks for uppercase character.
+ * @c: An input character
+ * Return: 1 if c is uppercase or 0 otherwise
+ */
+int _isupper(int c)
 {
-if (c != '2' && c != '4')
+char uppercase = 'A';
+int isupper = 0;
+
+for (; uppercase <= 'Z'; uppercase++)
 {
-_putchar(c);
+if (c == uppercase)
+{
+isupper = 1;
+break;
 }
-c++;
 }
-_putchar('\n');
+
+return (isupper);
 }
