@@ -1,4 +1,4 @@
-#include "main.h"                                                                                                                                               
+#include "main.h"                                                                             
 #include <stdio.h>                                                                                                                                              
                                                                                                                                                                 
 /**                                                                                                                                                             
@@ -23,8 +23,6 @@ _putchar(i / 10 + '0');
 _putchar(i % 10 + '0');                                                                                                                                         
 i++;                                                                                                                                                            
 }
-
-Sami, [6/11/2022 12:42 PM]
 _putchar('\n');                                                                                                                                                 
 }                                                                                                                                                               
 }
