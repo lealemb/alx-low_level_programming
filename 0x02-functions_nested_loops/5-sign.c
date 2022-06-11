@@ -1,24 +1,30 @@
-#include "main.h"
-/**
- * print_sign - prints the sign of a number
- * @n: the int to check
- * Return: 1 and prints + if n is greater than zero
- * 0 and prints 0 if n is zero
- * -1 and prints - if n is less than zero
- */
-int print_sign(int n)
-{
-if (n > 0)
-{
-_putchar('+');
-return (1);
-} else if (n == 0)
-{
-_putchar(48);
-return (0);
-} else if (n < 0)
-{
-_putchar('-');
+#include "main.h"                                                                                                                                               
+#include <stdio.h>                                                                                                                                              
+                                                                                                                                                                
+/**                                                                                                                                                             
+* more_numbers - Print numbers between 0 to 14 incl.                                                                                                            
+*                                                                                                                                                               
+* Return: Void.                                                                                                                                                 
+*/                                                                                                                                                              
+void more_numbers(void)                                                                                                                                         
+{                                                                                                                                                               
+int i;                                                                                                                                                          
+int x;                                                                                                                                                          
+                                                                                                                                                                
+for (x = 0; x < 10; x++)                                                                                                                                        
+{                                                                                                                                                               
+i = 0;                                                                                                                                                          
+while (i <= 14)                                                                                                                                                 
+{                                                                                                                                                               
+if (i >= 10)                                                                                                                                                    
+{                                                                                                                                                               
+_putchar(i / 10 + '0');                                                                                                                                         
+}                                                                                                                                                               
+_putchar(i % 10 + '0');                                                                                                                                         
+i++;                                                                                                                                                            
 }
-return (-1);
+
+Sami, [6/11/2022 12:42 PM]
+_putchar('\n');                                                                                                                                                 
+}                                                                                                                                                               
 }
