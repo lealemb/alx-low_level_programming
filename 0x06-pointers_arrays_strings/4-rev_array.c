@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * reverse_array - reverse
  * @a : pointer to int params
