@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * reverse_array - reverse
  * @a : pointer to int params
@@ -8,11 +9,19 @@
 
 void reverse_array(int *a, int n)
 {
-	int i = 0, lms;
-	while (i < n--)
+	int i;
+	int j;
+	int tmp;
+
+	i = 0;
+	j = n - 1;
+
+	while (i < j)
 	{
-		lms = l[i];
-		l[i++] = l[n];
-		l[n] = lms;
+		tmp = a[i];
+		a[i] = a[j];
+		a[j] = tmp;
+		i++;
+		j--;
 	}
 }
