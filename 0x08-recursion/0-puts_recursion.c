@@ -1,9 +1,9 @@
 /*
  * File: 1-print_rev_recursion.c
- * Auth: Lealem Birhanu
+ * Auth: Lealem
  */
 
-#include "holberton.h"
+#include "main.h"
 
 /**
  * _print_rev_recursion - Prints a string in reverse.
