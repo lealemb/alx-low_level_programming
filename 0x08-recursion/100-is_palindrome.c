@@ -1,67 +1,48 @@
 /*
- * File: 7-is_palindrome.c
+ * File: 6-is_prime_number.c
  * Auth: Lealem
  */
 
 #include "main.h"
 
-int find_strlen(char *s);
-int check_palindrome(char *s, int len, int index);
-int is_palindrome(char *s);
+int is_divisible(int num, int div);
+int is_prime_number(int n);
 
 /**
- * find_strlen - Returns the length of a string.
- * @s: The string to be measured.
+ * is_divisible - Checks if a number is divisible.
+ * @num: The number to be checked.
+ * @div: The divisor.
  *
- * Return: The length of the string.
+ * Return: If the number is divisible - 0.
+ *         If the number is not divisible - 1.
  */
-int find_strlen(char *s)
+int is_divisible(int num, int div)
 {
-	int len = 0;
+	if (num % div == 0)
+		return (0);
 
-	if (*(s + len))
-	{
-		len++;
-		len += find_strlen(s + len);
-	}
+	if (div == num / 2)
+		return (1);
 
-	return (len);
+	return (is_divisible(num, div + 1));
 }
 
 /**
- * check_palindrome - Checks if a string is a palindrome.
- * @s: The string to be checked.
- * @len: The length of s.
- * @index: The index of the string to be checked.
+ * is_prime_number - Checks if a number is prime.
+ * @n: The number to be checked.
  *
- * Return: If the string is a palindrome - 1.
- *         If the string is not a palindrome - 0.
+ * Return: If the integer is not prime - 0.
+ *         If the number is prime - 1.
  */
-int check_palindrome(char *s, int len, int index)
+int is_prime_number(int n)
 {
-	if (s[index] == s[len / 2])
+	int div = 2;
+
+	if (n <= 1)
+		return (0);
+
+	if (n >= 2 && n <= 3)
 		return (1);
 
-	if (s[index] == s[len - index - 1])
-		return (check_palindrome(s, len, index + 1));
-
-	return (0);
-}
-
-/**
- * is_palindrome - Checks if a string is a palindrome.
- * @s: The string to be checked.
- *
- * Return: If the string is a palindrome - 1.
- *         If the string is not a palindrome - 0.
- */
-int is_palindrome(char *s)
-{
-	int index = 0;
-	int len = find_strlen(s);
-
-	if (!(*s))
-		return (1);
-
-	return (check_palindrome(s, len, index));
+	return (is_divisible(n, div));
 }
